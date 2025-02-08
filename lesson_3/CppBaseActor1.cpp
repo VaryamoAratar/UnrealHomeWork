@@ -8,7 +8,8 @@ ACppBaseActor1::ACppBaseActor1()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	this->EnemyNum = 20;
+	this->IsAlive = true;
 }
 
 // Called when the game starts or when spawned
@@ -29,8 +30,8 @@ void ACppBaseActor1::Tick(float DeltaTime)
 void ACppBaseActor1::ShowActorInformation()
 {
 	//UE_LOG(LogTemp, Display, TEXT("CppBase is here"));
-	//UE_LOG(LogTemp, Warning, TEXT("CppBase Класс ошибся"));
-	//UE_LOG(LogTemp, Error, TEXT("CppBase ошибка"));
+	//UE_LOG(LogTemp, Warning, TEXT("CppBase ГЉГ«Г Г±Г± Г®ГёГЁГЎГ±Гї"));
+	//UE_LOG(LogTemp, Error, TEXT("CppBase Г®ГёГЁГЎГЄГ "));
 
 	FString InstanceName = GetActorNameOrLabel();
 	UE_LOG(LogTemp, Display, TEXT("Instance name : %s"), *InstanceName);
